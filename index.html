@@ -11,9 +11,18 @@
 <body>
 <script>
     // listen for keyup event in the window
+    const pressed = [];
+    const secretCode = 'wesbos';
+    // when someone presses one of our buttons, we need to push that into an array
+
+
     window.addEventListener('keyup', (e) => {
         console.log(e.key);
-    })
+        pressed.push(e.key);
+        console.log(pressed);
+        // need to cut the array off at 6 characters, like the number of letters in wes bos' name
+        pressed.splice()
+    });
 
 </script>
 </body>
