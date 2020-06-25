@@ -19,9 +19,10 @@
     window.addEventListener('keyup', (e) => {
         console.log(e.key);
         pressed.push(e.key);
-        console.log(pressed);
         // need to cut the array off at 6 characters, like the number of letters in wes bos' name
-        pressed.splice()
+        // go from the back, up 7 letters, trim from there
+        pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+        console.log(pressed);
     });
 
 </script>
